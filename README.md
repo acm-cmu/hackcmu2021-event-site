@@ -1,4 +1,4 @@
-# HackCMU 2020 home page
+# HackCMU 2021 home page
 
 This is HackCMU's 2020 home page. It is currently live at hackcmu.org.
 
