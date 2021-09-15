@@ -1,6 +1,6 @@
 # HackCMU 2021 home page
 
-This is HackCMU's 2020 home page. It is currently live at hackcmu.org.
+This is HackCMU's 2021 home page. It is currently live at hackcmu.org.
 
 ## Getting started
 

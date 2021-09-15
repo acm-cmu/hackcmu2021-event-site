@@ -83,7 +83,7 @@ export class Card extends React.Component<Props, State> {
                     delay: 7,
                     content: "> ready? click here to register",
                     isGlitched: false,
-                    link: "https://forms.gle/Zt3aq957vi5FRoPc7",
+                    link: "https://forms.gle/QF1enymZdbpKmjhq5",
                     className: "wide-top",
                 },
                 {
@@ -91,7 +91,7 @@ export class Card extends React.Component<Props, State> {
                     delay: 7,
                     content: "> click here to register as a mentor instead",
                     isGlitched: false,
-                    link: "https://forms.gle/eEY3HNSpz9zSHPkp8",
+                    link: "https://forms.gle/16PJ3wgEhuZzqeDj9",
                 },
                 {
                     size: "small",
