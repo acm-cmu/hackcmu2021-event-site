@@ -1,0 +1,198 @@
+.info {
+    position: absolute;
+    z-index: 3;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+
+    margin: 100px 150px;
+    border-radius: 10px;
+
+    background-color: #1f1f1f;
+    opacity: 0.90;
+}
+
+.info-container {
+    height: 100%;
+
+    > .navbar {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        .tab-button {
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        .tab-button:hover {
+            color: hotpink;
+            cursor: pointer;
+        }
+    }
+
+    .close-info {
+        z-index: 4;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 32px;
+        height: 32px;
+        opacity: 0.5;
+    }
+
+    .close-info:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    .close-info:before, .close-info:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 2px;
+        background-color: #ffffff;
+    }
+    
+    .close-info:before {
+        transform: rotate(45deg);
+    }
+    
+    .close-info:after {
+        transform: rotate(-45deg);
+    }
+      
+
+    > .content {
+        margin: 10px 15px;
+        height: calc(100% - 61px);
+        overflow: auto;
+
+        .content-title {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .question {
+            margin-bottom: 10px;
+        }
+
+        .answer {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            font-size: 14px;
+
+            > a {
+                color: hotpink;
+                text-decoration: none;
+            }
+            > a:hover {
+                color: #ff2efc;
+            }
+        }
+        
+        .note {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .schedule {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+
+            .day-events {
+                margin: 10px 20px;
+
+                > .dow {
+                    font-size: 18px;
+                }
+
+                > .tod {
+                    margin-top: 5px;
+                }
+
+                > .entry {
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .logos {
+            margin-top: 20px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+
+            > img {
+                margin: 20px 30px;
+            }
+            .aptiv {
+                height: 25px;
+            }
+            .bloomberg {
+                margin-top: 15px;
+                height: 37px;
+            }
+            .echoar {
+                margin-top: 10px;
+            }
+            .microsoft {
+                margin-top: 15px;
+                height: 36px;
+            }
+            .sandia {
+                margin-top: 15px;
+                height: 45px;
+            }
+            .scm {
+                margin-top: 5px;
+                height: 60px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .info {
+        margin: 80px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .info-container .content .schedule {
+        justify-content: flex-start;
+
+        .day-events {
+            margin: 10px 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .info {
+        margin: 20px;
+    }
+
+    .info-container {
+        > .navbar {
+            margin-left: 10px;
+
+            .tab-button {
+                padding: 10px 10px;
+            }
+            .tab-button:hover {
+                color: #ffffff;
+            }
+        }
+
+        .schedule {
+            justify-content: flex-start;
+
+            .day-events {
+                margin: 10px 0px;
+            }
+        }
+    }
+}
