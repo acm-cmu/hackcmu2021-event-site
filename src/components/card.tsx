@@ -56,26 +56,26 @@ export class Card extends React.Component<Props, State> {
                 {
                     size: "small",
                     delay: 10,
-                    content: "2020 edition, brought to you by ACM@CMU",
+                    content: "2021 edition, brought to you by ACM@CMU",
                     isGlitched: false,
                     className: "acm-msg",
                 },
                 {
                     size: "small",
                     delay: 7,
-                    content: "location: virtual",
+                    content: "location: on-campus TBD",
                     isGlitched: false,
                 },
                 {
                     size: "small",
                     delay: 7,
-                    content: "start: friday, september 25, 5:00 pm",
+                    content: "start: friday, october 1, 5:00 pm",
                     isGlitched: false,
                 },
                 {
                     size: "small",
                     delay: 7,
-                    content: "end: saturday, september 26, 8:00 pm",
+                    content: "end: saturday, october 2, 8:00 pm",
                     isGlitched: false,
                 },
                 {

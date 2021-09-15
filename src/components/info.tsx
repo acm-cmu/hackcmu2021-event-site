@@ -36,14 +36,14 @@ export class Info extends React.Component<Props, State> {
                     <div className="note">Note: all times in eastern time (EST)</div>
                     <div className="schedule">
                         <div className="day-events">
-                            <div className="dow">Friday, September 25</div>
+                            <div className="dow">Friday, October 1</div>
                             <div className="tod">Afternoon:</div>
                             <div className="entry">5:00 Opening ceremony</div>
                             <div className="entry">6:00 Hacking starts!</div>
                             <div className="entry">Tech talks and tutorials TBA!</div>
                         </div>
                         <div className="day-events">
-                            <div className="dow">Saturday, September 26</div>
+                            <div className="dow">Saturday, October 2</div>
                             <div className="tod">All day:</div>
                             <div className="entry">More tech talks and tutorials TBA!</div>
                             <div className="tod">Afternoon:</div>
@@ -52,7 +52,7 @@ export class Info extends React.Component<Props, State> {
                             <div className="entry">8:00 Live demo session</div>
                         </div>
                         <div className="day-events">
-                            <div className="dow">Sunday, September 27</div>
+                            <div className="dow">Sunday, October 3</div>
                             <div className="tod">Afternoon:</div>
                             <div className="entry">3:00 Closing ceremony</div>
                         </div>
@@ -63,18 +63,28 @@ export class Info extends React.Component<Props, State> {
             return (
                 <>
                     <div className="content-title">faq</div>
-                    <div className="question">Q: What will the virtual hackathon look like?</div>
-                    <div className="answer">The primary platform will be a 24/7 live stream. We will be streaming events such as the opening ceremony, tech talks, demos, and awards ceremony. There may also be some fun activities like puzzles, games and raffles on the live stream. Mentors and sponsors will be available to chat with on our Hackathon discord server. Judging will take place through a video submission. Teams can optionally do a live demo as well on the live stream.</div>
-                    <div className="question">Q: What if I don’t have a team?</div>
-                    <div className="answer">Don’t worry, there will be a virtual mixer at the start of the event, where you will be shuffled around in Zoom breakout rooms and meet other individual hackers.</div>
-                    <div className="question">Q: Where can I participate from?</div>
-                    <div className="answer">You don’t have to be near CMU campus to participate. In fact, there is no in-person component of this hackathon. We welcome you to hack remotely and work with your team through virtual methods. </div>
-                    <div className="question">Q: What if I have a weak connection/bad internet?</div>
-                    <div className="answer">The project demos will be through a video submission and you have 1.5 hours to submit, so you don’t need to worry about losing connection during a demo. All other events will be through standard video calling or live streams and can be rewatched.</div>
-                    <div className="question">Q: Will there be prizes or swag?</div>
-                    <div className="answer">We will be shipping prizes to the winners after the hackathon in the US. Unfortunately we are unable to ship internationally, but if you come back to campus in later semesters, we will be sure to get the prizes to you. We are also working on getting tshirts, but still are figuring out how to distribute those to people on campus in a safe manner. If you are not on campus, you can pick up a t-shirt in later semesters.</div>
+                    <div className="question">Q: What is HackCMU?</div>
+                    <div className="answer">HackCMU is a 24-hour event where students from across campus come together to make something awesome — like an app, website or hardware hack.</div>
+                    <div className="question">Q: Where will this be held?</div>
+                    <div className="answer">Saturday dinner, exhibitions, and closing will take place on campus (exact location TBD).</div>
+                    <div className="question">Q: Who can attend?</div>
+                    <div className="answer">Any student is welcome to apply. HackCMU is a beginner-focused hackathon, and preference will be given to first years. More experienced hackers are encouraged to sign up as mentors.</div>
+                    <div className="question">Q: I have another event during the weekend — can I miss part of the event?</div>
+                    <div className="answer">Probably. Contact us at acm-exec[at]cs.cmu.edu for any specific concerns.</div>
+                    <div className="question">Q: How much does this cost?</div>
+                    <div className="answer">$0! We provide all food, drinks, and swag. This event is made possible only by our wonderful sponsors.</div>
+                    <div className="question">Q: I’m not a “hacker”, can I still participate?</div>
+                    <div className="answer">Students of all skill levels are encouraged to attend, even if you’ve never written a line of code! Creative individuals of all kinds are welcome to apply — such as designers, ECE majors, statistics, etc. The only requirement is your attitude to learn!</div>
+                    <div className="question">Q: Are there teams? Do I need one to sign up!</div>
+                    <div className="answer">Working as a team is highly encouraged, but not required. You are welcome to form teams ahead of the event, but there will also be team forming day-of the event!</div>
+                    <div className="question">Q: How big can a team be?</div>
+                    <div className="answer">A team can have anywhere between 2 and 4 people.</div>
+                    <div className="question">Q: What are the rules? Can I work on my project ahead of time?</div>
+                    <div className="answer">All work must be original, and you are not permitted to start building or designing your project until the event. Brainstorming ideas and forming teams beforehand is fine, though.</div>
                     <div className="question">Q: Who runs this event?</div>
-                    <div className="answer">You can learn more about us <a href="https://acmatcmu.org">over here.</a></div>
+                    <div className="answer">You can learn more about us <a href="http://acmatcmu.com">over here.</a></div>
+                    <div className="question">Q: Any other questions, comments, or concerns?</div>
+                    <div className="answer">Email us at acm-exec[at]cs.cmu.edu.</div>
                 </>
             );
         } else {
