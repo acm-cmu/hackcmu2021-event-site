@@ -3,11 +3,12 @@ import React from 'react';
 import classNames from 'classnames';
 
 import { Image } from './image';
+import { Sponsors } from './sponsors';
 import { Input } from './input';
 import { Info } from './info';
 import { SizeType, Text } from './text';
 
-import png_logo from '../dog_logo.png';
+import png_logo from '../hack.gif';
 import './card.scss';
 
 type Line = {
@@ -54,7 +55,7 @@ export class Card extends React.Component<Props, State> {
                     isGlitched: true,
                 },
                 {
-                    size: "small",
+                    size: "medium",
                     delay: 10,
                     content: "2021 edition, brought to you by ACM@CMU",
                     isGlitched: false,
@@ -62,8 +63,16 @@ export class Card extends React.Component<Props, State> {
                 },
                 {
                     size: "small",
+                    delay: 10,
+                    content: "with support from ScottyLabs",
+                    link: "https://thebridge.cmu.edu/organization/scottylabs",
+                    isGlitched: false,
+                    className: "scotty-msg",
+                },
+                {
+                    size: "small",
                     delay: 7,
-                    content: "location: on-campus TBD",
+                    content: "location: Gates - food and swag will be provided!",
                     isGlitched: false,
                 },
                 {
@@ -164,6 +173,7 @@ export class Card extends React.Component<Props, State> {
                     <div className="left"><Image minOpacity={0.2} maxOpacity={1} img={png_logo} /></div>
                     <div className="right">{this.renderRight()}</div>
                 </div>
+                <Sponsors delay={10}/>
             </>
         );
     };

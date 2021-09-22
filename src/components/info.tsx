@@ -40,12 +40,12 @@ export class Info extends React.Component<Props, State> {
                             <div className="tod">Afternoon:</div>
                             <div className="entry">5:00 Opening ceremony</div>
                             <div className="entry">6:00 Hacking starts!</div>
-                            <div className="entry">Tech talks and tutorials TBA!</div>
+                            <div className="entry">10:00 Mentors go to bed for the night</div>
                         </div>
                         <div className="day-events">
                             <div className="dow">Saturday, October 2</div>
-                            <div className="tod">All day:</div>
-                            <div className="entry">More tech talks and tutorials TBA!</div>
+                            <div className="tod">Morning:</div>
+                            <div className="entry">9:00 Mentor and Sponsors available</div>
                             <div className="tod">Afternoon:</div>
                             <div className="entry">6:00 Hacking ends!</div>
                             <div className="entry">7:30 Video submission deadline</div>
@@ -66,7 +66,7 @@ export class Info extends React.Component<Props, State> {
                     <div className="question">Q: What is HackCMU?</div>
                     <div className="answer">HackCMU is a 24-hour event where students from across campus come together to make something awesome — like an app, website or hardware hack.</div>
                     <div className="question">Q: Where will this be held?</div>
-                    <div className="answer">Saturday dinner, exhibitions, and closing will take place on campus (exact location TBD).</div>
+                    <div className="answer">Hacking will take place at Gates, with teams scattered across classrooms for distancing.</div>
                     <div className="question">Q: Who can attend?</div>
                     <div className="answer">Any student is welcome to apply. HackCMU is a beginner-focused hackathon, and preference will be given to first years. More experienced hackers are encouraged to sign up as mentors.</div>
                     <div className="question">Q: I have another event during the weekend — can I miss part of the event?</div>
