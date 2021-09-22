@@ -13,7 +13,7 @@
 }
 
 .left {
-    width: 400px;
+    width: 300px;
     height: 100%;
     padding-right: 50px;
     display: flex;
@@ -21,7 +21,7 @@
 }
 
 .logo {
-    width: 60%;
+    width: 100%;
 }
 
 .right {
@@ -38,7 +38,7 @@
     -webkit-transform: translateX(-50%) translateY(-50%);
 
 
-    width: 50%;
+    width: 60%;
     height: 100px;
     display: flex;
     align-items:center;
