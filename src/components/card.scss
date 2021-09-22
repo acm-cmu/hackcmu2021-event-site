@@ -143,3 +143,10 @@
         display: none;
     }
 }
+
+
+@media only screen and (max-height: 500px) {
+    .sponsors {
+        display: none;
+    }
+}

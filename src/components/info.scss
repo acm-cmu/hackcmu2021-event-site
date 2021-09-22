@@ -119,6 +119,24 @@
             }
         }
 
+        .perks {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start ;
+
+            .perk {
+                margin: 10px 20px;
+
+                > .dow {
+                    font-size: 18px;
+                }
+
+                > .entry {
+                    margin-left: 20px;
+                }
+            }
+        }
+
         .logos {
             margin-top: 20px;
             display: flex;

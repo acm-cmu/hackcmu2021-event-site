@@ -3,12 +3,14 @@ import React from 'react';
 type Props = {
     minOpacity: number;
     maxOpacity: number;
-    img: string;
+    img_face: string;
+    img_hack: string;
 };
 
 type State = {
     imageStatus: boolean;
     isDim: boolean;
+    isAltImg: boolean,
     currFlicker: number;
     flickerDuration: Array<number>;
     timeout: number;
@@ -20,6 +22,7 @@ export class Image extends React.Component<Props, State> {
         this.state = {
             imageStatus: false,
             isDim: true,
+            isAltImg: true,
             currFlicker: 0,
             flickerDuration: [1.3, 0.1, 0.5, 0.15, 0.1, 0.4, 0.1],
             timeout: 0,
@@ -27,21 +30,29 @@ export class Image extends React.Component<Props, State> {
     };
 
     flicker = () => {
-        const { isDim, currFlicker, flickerDuration } = this.state;
-        this.setState({
-            isDim: !isDim,
-        });
-
+        const { isDim, isAltImg, currFlicker, flickerDuration } = this.state;
+        
         if (currFlicker < flickerDuration.length - 1) {
+            this.setState({
+                isDim: !isDim,
+                isAltImg: !isAltImg,
+            });
+
             let delay = flickerDuration[currFlicker + 1]
             this.setState({
                 currFlicker: currFlicker + 1,
                 timeout: window.setTimeout(this.flicker, delay * 1000),
             });
+
         } else {
-            let delay = 1000 * (Math.floor(Math.random() * 1) + 4)
-            if (!isDim) {
-                delay = 50 * Math.floor(Math.random() * 2)
+            this.setState({
+                isDim: false,
+                isAltImg: !isAltImg,
+            });
+
+            let delay = 500 * (Math.floor(Math.random() * 1) + 4)
+            if (!isAltImg) {
+                delay = 300 * (Math.floor(Math.random() * 2) + 1)
             }
             this.setState({
                 timeout: window.setTimeout(this.flicker, delay),
@@ -71,11 +82,15 @@ export class Image extends React.Component<Props, State> {
     }
 
     render() {
-        const { minOpacity, maxOpacity, img } = this.props;
-        const { imageStatus, isDim } = this.state;
+        const { minOpacity, maxOpacity, img_hack, img_face } = this.props;
+        const { imageStatus, isDim, isAltImg } = this.state;
         let opacity = maxOpacity;
+        let img = img_hack;
         if (isDim) {
             opacity = minOpacity;
+        }
+        if (isAltImg) {
+            img = img_face;
         }
         return (
             <img
@@ -86,7 +101,7 @@ export class Image extends React.Component<Props, State> {
                 onError={this.handleImageErrored.bind(this)}
                 style={{
                     opacity: opacity,
-                    display: (imageStatus ? undefined : "none"),
+                    // display: (imageStatus ? undefined : "none"),
                 }}
             />
         );

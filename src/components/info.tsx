@@ -8,7 +8,7 @@ import microsoft from './logos/microsoft.svg';
 import sandia from './logos/sandia.svg';
 import scm from './logos/scm.png';
 
-type TabType = "schedule" | "faq" | "sponsors";
+type TabType = "schedule" | "faq" | "perks & prizes" | "sponsors";
 
 type Props = {
     active: boolean;
@@ -87,6 +87,39 @@ export class Info extends React.Component<Props, State> {
                     <div className="answer">Email us at acm-exec[at]cs.cmu.edu.</div>
                 </>
             );
+        } else if (tab == "perks & prizes") {
+            return (
+                <>
+                    <div className="content-title">perks & prizes</div>
+                    <div className="perks">
+                        <div className="perk">
+                            <div className="dow">Food & Swag</div>
+                            <div className="entry">~ We will provide free dinner, lunch, then dinner, hopefully with snacks in between.</div>
+                            <div className="entry">~ Free t-shirts.</div>
+                            <div className="entry">~ Prob more stuff, we're figuring it out. Stickers, anyone?</div>
+                        </div>
+                        <div className="perk">
+                            <div className="dow">Potential Prizes</div>
+                            <div className="entry">~ Mechanical Keyboard</div>
+                            <div className="entry">~ JBL Clip 4</div>
+                            <div className="entry">~ Anker Soundcore 2</div>
+                            <div className="entry">~ Amazfit</div>
+                            <div className="entry">~ Tile</div>
+                            <div className="entry">~ Other tech upon request</div>
+                        </div>
+                        <div className="perk">
+                            <div className="dow">Mentors</div>
+                            <div className="entry">~ We have experienced hackers signed up to camp out at Gates to help you!</div>
+                        </div>
+                        <div className="perk">
+                            <div className="dow">Awards</div>
+                            <div className="entry">~ General Category Awards (TBD)</div>
+                            <div className="entry">~ Sponsor-Specific Challenge Awards (TBD, to be judged by our sponsors)</div>
+                            <div className="entry">~ 1st, 2nd, 3rd and Honorable Mentions for each category</div>
+                        </div>
+                    </div>
+                </>
+            );
         } else {
             return (
                 <>
@@ -110,7 +143,7 @@ export class Info extends React.Component<Props, State> {
     };
 
     renderTabs() {
-        let tabs: Array<TabType> = ["schedule", "faq", "sponsors"];
+        let tabs: Array<TabType> = ["schedule", "faq", "perks & prizes", "sponsors"];
         let buttons = []
         for (let i = 0; i < tabs.length; i++) {
             let clickFn = () => this.changeTab(tabs[i]);

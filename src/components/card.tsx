@@ -8,7 +8,8 @@ import { Input } from './input';
 import { Info } from './info';
 import { SizeType, Text } from './text';
 
-import png_logo from '../hack.gif';
+import png_face from '../logo_face.jpeg';
+import png_hack from '../logo_hack.jpeg';
 import './card.scss';
 
 type Line = {
@@ -26,7 +27,8 @@ type Props = {
 };
 
 type State = {
-    img: string;
+    imgmain: string;
+    imgalt: string;
     imgThreshold: number;
     currActive: number;
     lines: Array<Line>;
@@ -38,7 +40,8 @@ export class Card extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props);
         this.state = {
-            img: png_logo,
+            imgmain: png_hack,
+            imgalt: png_face,
             imgThreshold: 1,
             currActive: 0,
             lines: [
@@ -72,7 +75,7 @@ export class Card extends React.Component<Props, State> {
                 {
                     size: "small",
                     delay: 7,
-                    content: "location: Gates - food and swag will be provided!",
+                    content: "location: Gates Building - food and swag will be provided!",
                     isGlitched: false,
                 },
                 {
@@ -161,7 +164,7 @@ export class Card extends React.Component<Props, State> {
     };
 
     render() {
-        const { overlay } = this.state;
+        const { overlay, imgalt, imgmain} = this.state;
         let cardClasses = "card"
         if (overlay) {
             cardClasses = classNames(cardClasses, "blur");
@@ -170,7 +173,7 @@ export class Card extends React.Component<Props, State> {
             <>
                 <Info active={overlay} hidePopup={this.hidePopup} />
                 <div className={cardClasses}>
-                    <div className="left"><Image minOpacity={0.2} maxOpacity={1} img={png_logo} /></div>
+                    <div className="left"><Image minOpacity={0.2} maxOpacity={1} img_face={imgalt} img_hack={imgmain} /></div>
                     <div className="right">{this.renderRight()}</div>
                 </div>
                 <Sponsors delay={10}/>
