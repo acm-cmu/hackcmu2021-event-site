@@ -8,8 +8,8 @@ import { Input } from './input';
 import { Info } from './info';
 import { SizeType, Text } from './text';
 
-import png_face from '../logo_face.jpeg';
-import png_hack from '../logo_hack.jpeg';
+import png_face from '../logoface.png';
+import png_hack from '../logohack.png';
 import './card.scss';
 
 type Line = {
@@ -68,7 +68,7 @@ export class Card extends React.Component<Props, State> {
                     size: "small",
                     delay: 10,
                     content: "with support from ScottyLabs",
-                    link: "https://thebridge.cmu.edu/organization/scottylabs",
+                    link: "https://scottylabs.org/",
                     isGlitched: false,
                     className: "scotty-msg",
                 },

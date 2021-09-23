@@ -3,7 +3,7 @@ import './info.scss';
 
 import aptiv from './logos/aptiv.svg';
 import bloomberg from './logos/bloomberg.svg';
-import echoar from './logos/echoar.png';
+import fb from './logos/fb.png';
 import microsoft from './logos/microsoft.svg';
 import sandia from './logos/sandia.svg';
 import scm from './logos/scm.png';
@@ -40,12 +40,12 @@ export class Info extends React.Component<Props, State> {
                             <div className="tod">Afternoon:</div>
                             <div className="entry">5:00 Opening ceremony</div>
                             <div className="entry">6:00 Hacking starts!</div>
-                            <div className="entry">10:00 Mentors go to bed for the night</div>
+                            <div className="entry">10:00 Mentors go to bed</div>
                         </div>
                         <div className="day-events">
                             <div className="dow">Saturday, October 2</div>
                             <div className="tod">Morning:</div>
-                            <div className="entry">9:00 Mentor and Sponsors available</div>
+                            <div className="entry">9:00 Mentors available</div>
                             <div className="tod">Afternoon:</div>
                             <div className="entry">6:00 Hacking ends!</div>
                             <div className="entry">7:30 Video submission deadline</div>
@@ -128,7 +128,7 @@ export class Info extends React.Component<Props, State> {
                     <div className="logos">
                         <img className="aptiv" src={aptiv} alt={aptiv} />
                         <img className="bloomberg" src={bloomberg} alt={bloomberg} />
-                        <img className="echoar" src={echoar} alt={echoar} />
+                        <img className="fb" src={fb} alt={fb} />
                         <img className="microsoft" src={microsoft} alt={microsoft} />
                         <img className="sandia" src={sandia} alt={sandia} />
                         <img className="scm" src={scm} alt={scm} />
