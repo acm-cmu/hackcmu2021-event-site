@@ -75,7 +75,7 @@ export class Card extends React.Component<Props, State> {
                 {
                     size: "small",
                     delay: 7,
-                    content: "location: Gates Building - food and swag will be provided!",
+                    content: "location: Gates - sign up for tons of food and swag!",
                     isGlitched: false,
                 },
                 {
@@ -108,7 +108,7 @@ export class Card extends React.Component<Props, State> {
                 {
                     size: "small",
                     delay: 7,
-                    content: "> not ready yet? click here for more info",
+                    content: "> any questions or concerns? click here to be convinced",
                     isGlitched: false,
                     onClick: this.showPopup,
                 }

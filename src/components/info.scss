@@ -136,40 +136,6 @@
                 }
             }
         }
-
-        .logos {
-            margin-top: 20px;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-
-            > img {
-                margin: 20px 30px;
-            }
-            .aptiv {
-                height: 25px;
-            }
-            .bloomberg {
-                margin-top: 15px;
-                height: 37px;
-            }
-            .fb {
-                margin-top: 10px;
-                height: 37px;
-            }
-            .microsoft {
-                margin-top: 15px;
-                height: 36px;
-            }
-            .sandia {
-                margin-top: 15px;
-                height: 45px;
-            }
-            .scm {
-                margin-top: 5px;
-                height: 60px;
-            }
-        }
     }
 }
 

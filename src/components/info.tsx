@@ -1,14 +1,7 @@
 import React from 'react';
 import './info.scss';
 
-import aptiv from './logos/aptiv.svg';
-import bloomberg from './logos/bloomberg.svg';
-import fb from './logos/fb.png';
-import microsoft from './logos/microsoft.svg';
-import sandia from './logos/sandia.svg';
-import scm from './logos/scm.png';
-
-type TabType = "schedule" | "faq" | "perks & prizes" | "sponsors";
+type TabType = "schedule" | "faq" | "perks & prizes";
 
 type Props = {
     active: boolean;
@@ -39,22 +32,26 @@ export class Info extends React.Component<Props, State> {
                             <div className="dow">Friday, October 1</div>
                             <div className="tod">Afternoon:</div>
                             <div className="entry">5:00 Opening ceremony</div>
-                            <div className="entry">6:00 Hacking starts!</div>
-                            <div className="entry">10:00 Mentors go to bed</div>
+                            <div className="entry">5:30 Team formation + hacking starts! Mentors available</div>
+                            <div className="entry">6:00 Piada Catering</div>
+                            <div className="entry">7:30 Tutorial / workshop</div>
+                            <div className="tod">Night:</div>
+                            <div className="entry">12:00-12:30 Midnight Starbucks</div>
                         </div>
                         <div className="day-events">
                             <div className="dow">Saturday, October 2</div>
                             <div className="tod">Morning:</div>
-                            <div className="entry">9:00 Mentors available</div>
+                            <div className="entry">9:00-10:00 Bruegger's Bagels & Starbucks</div>
+                            <div className="entry">12:30 Chipotle</div>
                             <div className="tod">Afternoon:</div>
                             <div className="entry">6:00 Hacking ends!</div>
                             <div className="entry">7:30 Video submission deadline</div>
-                            <div className="entry">8:00 Live demo session</div>
+                            <div className="entry">8:00 Optional demo watch party</div>
                         </div>
                         <div className="day-events">
                             <div className="dow">Sunday, October 3</div>
                             <div className="tod">Afternoon:</div>
-                            <div className="entry">3:00 Closing ceremony</div>
+                            <div className="entry">3:00 Closing ceremony (virtual)</div>
                         </div>
                     </div>
                 </>
@@ -69,16 +66,14 @@ export class Info extends React.Component<Props, State> {
                     <div className="answer">Hacking will take place at Gates, with teams scattered across classrooms for distancing.</div>
                     <div className="question">Q: Who can attend?</div>
                     <div className="answer">Any student is welcome to apply. HackCMU is a beginner-focused hackathon, and preference will be given to first years. More experienced hackers are encouraged to sign up as mentors.</div>
-                    <div className="question">Q: I have another event during the weekend — can I miss part of the event?</div>
-                    <div className="answer">Probably. Contact us at acm-exec[at]cs.cmu.edu for any specific concerns.</div>
                     <div className="question">Q: How much does this cost?</div>
-                    <div className="answer">$0! We provide all food, drinks, and swag. This event is made possible only by our wonderful sponsors.</div>
+                    <div className="answer">$0! We'll provide meals, snacks, drinks, and lots of swag, thanks to the support of our wonderful sponsors.</div>
                     <div className="question">Q: I’m not a “hacker”, can I still participate?</div>
                     <div className="answer">Students of all skill levels are encouraged to attend, even if you’ve never written a line of code! Creative individuals of all kinds are welcome to apply — such as designers, ECE majors, statistics, etc. The only requirement is your attitude to learn!</div>
                     <div className="question">Q: Are there teams? Do I need one to sign up!</div>
-                    <div className="answer">Working as a team is highly encouraged, but not required. You are welcome to form teams ahead of the event, but there will also be team forming day-of the event!</div>
+                    <div className="answer">Working as a team is highly encouraged, but not required. We'll be facilitating team-forming the day-of, so don't be discouraged if you don't have a team!</div>
                     <div className="question">Q: How big can a team be?</div>
-                    <div className="answer">A team can have anywhere between 2 and 4 people.</div>
+                    <div className="answer">Up to 4 people.</div>
                     <div className="question">Q: What are the rules? Can I work on my project ahead of time?</div>
                     <div className="answer">All work must be original, and you are not permitted to start building or designing your project until the event. Brainstorming ideas and forming teams beforehand is fine, though.</div>
                     <div className="question">Q: Who runs this event?</div>
@@ -87,51 +82,36 @@ export class Info extends React.Component<Props, State> {
                     <div className="answer">Email us at acm-exec[at]cs.cmu.edu.</div>
                 </>
             );
-        } else if (tab == "perks & prizes") {
+        } else {
             return (
                 <>
                     <div className="content-title">perks & prizes</div>
                     <div className="perks">
                         <div className="perk">
                             <div className="dow">Food & Swag</div>
-                            <div className="entry">~ We will provide free dinner, lunch, then dinner, hopefully with snacks in between.</div>
-                            <div className="entry">~ Free t-shirts.</div>
-                            <div className="entry">~ Prob more stuff, we're figuring it out. Stickers, anyone?</div>
+                            <div className="entry">~ Friday, dinner: Piada </div>
+                            <div className="entry">~ Friday, midnight: Starbucks</div>
+                            <div className="entry">~ Saturday, breakfast: Bruegger's Bagels</div>
+                            <div className="entry">~ Saturday, lunch: Chipotle</div>
+                            <div className="entry">~ Hack-CMU T-shirts, stickers, blankets, waterbottles, maybe more idk</div>
                         </div>
                         <div className="perk">
-                            <div className="dow">Potential Prizes</div>
+                            <div className="dow">Raffle and Winning Prizes</div>
                             <div className="entry">~ Mechanical Keyboard</div>
                             <div className="entry">~ JBL Clip 4</div>
                             <div className="entry">~ Anker Soundcore 2</div>
-                            <div className="entry">~ Amazfit</div>
-                            <div className="entry">~ Tile</div>
-                            <div className="entry">~ Other tech upon request</div>
+                            <div className="entry">~ Backpack</div>
+                            <div className="entry">~ Massive Plushie</div>
                         </div>
                         <div className="perk">
                             <div className="dow">Mentors</div>
-                            <div className="entry">~ We have experienced hackers signed up to camp out at Gates to help you!</div>
+                            <div className="entry">~ We will have experienced hackers signed up to camp out at Gates to help you!</div>
                         </div>
                         <div className="perk">
                             <div className="dow">Awards</div>
-                            <div className="entry">~ General Category Awards (TBD)</div>
-                            <div className="entry">~ Sponsor-Specific Challenge Awards (TBD, to be judged by our sponsors)</div>
-                            <div className="entry">~ 1st, 2nd, 3rd and Honorable Mentions for each category</div>
+                            <div className="entry">~ 1st, 2nd, 3rd, Honorable Mentions overall</div>
+                            <div className="entry">~ Sponsor-Specific Challenge Awards</div>
                         </div>
-                    </div>
-                </>
-            );
-        } else {
-            return (
-                <>
-                    <div className="content-title">sponsors</div>
-                    <div className="thanks">This event would simply not be possible without the help of our sponsors. We are immensely thankful for our sponsors below.</div>
-                    <div className="logos">
-                        <img className="aptiv" src={aptiv} alt={aptiv} />
-                        <img className="bloomberg" src={bloomberg} alt={bloomberg} />
-                        <img className="fb" src={fb} alt={fb} />
-                        <img className="microsoft" src={microsoft} alt={microsoft} />
-                        <img className="sandia" src={sandia} alt={sandia} />
-                        <img className="scm" src={scm} alt={scm} />
                     </div>
                 </>
             );
@@ -143,7 +123,7 @@ export class Info extends React.Component<Props, State> {
     };
 
     renderTabs() {
-        let tabs: Array<TabType> = ["schedule", "faq", "perks & prizes", "sponsors"];
+        let tabs: Array<TabType> = ["schedule", "faq", "perks & prizes"];
         let buttons = []
         for (let i = 0; i < tabs.length; i++) {
             let clickFn = () => this.changeTab(tabs[i]);
