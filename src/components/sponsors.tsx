@@ -5,6 +5,7 @@ import aptiv from './logos/aptiv.svg';
 import bloomberg from './logos/bloomberg.svg';
 import fb from './logos/fb.png';
 import microsoft from './logos/microsoft.svg';
+import hrt from './logos/hrt.png';
 import sandia from './logos/sandia.svg';
 import scm from './logos/scm.png';
 
@@ -65,7 +66,7 @@ export class Sponsors extends React.Component<Props, State> {
                     <img className="aptiv" src={aptiv} alt={aptiv} />
                     <img className="bloomberg" src={bloomberg} alt={bloomberg} />
                     <img className="fb" src={fb} alt={fb} />
-                    <img className="microsoft" src={microsoft} alt={microsoft} />
+                    <img className="hrt" src={hrt} alt={hrt} />
                     <img className="sandia" src={sandia} alt={sandia} />
                     <img className="scm" src={scm} alt={scm} />
                 </div>

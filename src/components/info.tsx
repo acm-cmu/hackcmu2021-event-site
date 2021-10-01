@@ -26,32 +26,40 @@ export class Info extends React.Component<Props, State> {
             return (
                 <>
                     <div className="content-title">schedule of events</div>
-                    <div className="note">Note: all times in eastern time (EST)</div>
+                    <div className="note">Note: events subject to change</div>
                     <div className="schedule">
                         <div className="day-events">
                             <div className="dow">Friday, October 1</div>
-                            <div className="tod">Afternoon:</div>
-                            <div className="entry">5:00 Opening ceremony</div>
-                            <div className="entry">5:30 Team formation + hacking starts! Mentors available</div>
-                            <div className="entry">6:00 Piada Catering</div>
-                            <div className="entry">7:30 Tutorial / workshop</div>
-                            <div className="tod">Night:</div>
-                            <div className="entry">12:00-12:30 Midnight Starbucks</div>
+                            <div className="tod">Afternoon Events</div>
+                            <div className="tech">4:30 pm - Doors open for Check-in @ Rashid</div>
+                            <div className="tech">5:00 pm - Opening Ceremony @ Rashid</div>
+                            <div className="tech">5:30 pm - Mixer (for people without teams) @ Rashid</div>
+                            <div className="entry">5:30 pm - Dinner @ Reddy, across from Rashid</div>
+                            <div className="tech">6:00 pm - Hacking Begins! Mentors available until 10:00</div>
+                            <div className="tod">Evening Events</div>
+                            <div className="tech">7:30 pm - Tech talk: Basic Web Dev (Node and Express) @ Rashid</div>
+                            <div className="tech">8:30 pm -  Tech talk: Basic Game Dev (Unity Navigation/Probuilder) @ Rashid</div>
+                            <div className="entry">12:00 am - Midnight Snacks and Coffee @ La Prima, 3rd Floor</div>
                         </div>
                         <div className="day-events">
                             <div className="dow">Saturday, October 2</div>
-                            <div className="tod">Morning:</div>
-                            <div className="entry">9:00-10:00 Bruegger's Bagels & Starbucks</div>
-                            <div className="entry">12:30 Chipotle</div>
-                            <div className="tod">Afternoon:</div>
-                            <div className="entry">6:00 Hacking ends!</div>
-                            <div className="entry">7:30 Video submission deadline</div>
-                            <div className="entry">8:00 Optional demo watch party</div>
+                            <div className="tod">Morning Events</div>
+                            <div className="entry">9:00 am - Breakfast @ Reddy, Coffee @ Gates La Prima</div>
+                            <div className="tech">9:00 am - Mentor and Sponsors available @ Rashid and Virtually</div>
+                            <div className="tech">10:00 am - Tech talk: Basic Frontend / Backend (React, GraphGL, REST API) @ Rashid Auditorium</div>
+                            <div className="tech">11:00 am - Sponsor meet and greet @ Zoom</div>
+                            <div className="entry">12:15 pm - Lunch @ Reddy</div>
+                            <div className="tod">Afternoon Events</div>
+                            <div className="entry">4:00 pm - Afternoon Snacks @ Reddy</div>
+                            <div className="tech">4:00 pm - Sponsor meet and greet @ Zoom</div>
+                            <div className="tech">6:00 pm - Hacking ends</div>
+                            <div className="tech">7:30 pm - Video submission deadline</div>
+                            <div className="tech">8:00 pm - Optional demo stream</div>
                         </div>
                         <div className="day-events">
                             <div className="dow">Sunday, October 3</div>
-                            <div className="tod">Afternoon:</div>
-                            <div className="entry">3:00 Closing ceremony (virtual)</div>
+                            <div className="tod">Afternoon Events</div>
+                            <div className="entry">3:00 pm - Closing ceremony & awards @ Zoom</div>
                         </div>
                     </div>
                 </>
@@ -92,8 +100,8 @@ export class Info extends React.Component<Props, State> {
                             <div className="entry">~ Friday, dinner: Piada </div>
                             <div className="entry">~ Friday, midnight: Starbucks</div>
                             <div className="entry">~ Saturday, breakfast: Bruegger's Bagels</div>
-                            <div className="entry">~ Saturday, lunch: Chipotle</div>
-                            <div className="entry">~ Hack-CMU T-shirts, stickers, blankets, waterbottles, maybe more idk</div>
+                            <div className="entry">~ Saturday, lunch: Aladdin's Eatery</div>
+                            <div className="entry">~ Hack-CMU T-shirts, stickers, blankets, waterbottles, hotsauce, plushie, HRT Swag</div>
                         </div>
                         <div className="perk">
                             <div className="dow">Raffle and Winning Prizes</div>
@@ -101,7 +109,7 @@ export class Info extends React.Component<Props, State> {
                             <div className="entry">~ JBL Clip 4</div>
                             <div className="entry">~ Anker Soundcore 2</div>
                             <div className="entry">~ Backpack</div>
-                            <div className="entry">~ Massive Plushie</div>
+                            <div className="entry">~ Sponsor Swag, Amazon Gift Cards, SnackMagic, Jabra Earbuds</div>
                         </div>
                         <div className="perk">
                             <div className="dow">Mentors</div>

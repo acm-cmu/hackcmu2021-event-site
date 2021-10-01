@@ -100,21 +100,28 @@
         .schedule {
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-around;
+            justify-content: space-between;
 
             .day-events {
                 margin: 10px 20px;
 
                 > .dow {
                     font-size: 18px;
+                    // color: #f86400;
+                    color: #4dd0e1;
+                }
+                
+                > .tod {
+                    margin-top: 10px;
                 }
 
-                > .tod {
-                    margin-top: 5px;
+                > .tech {
+                    margin-left: 20px;
                 }
 
                 > .entry {
                     margin-left: 20px;
+                    color: #ff69bf;
                 }
             }
         }

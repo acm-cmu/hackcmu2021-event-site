@@ -66,16 +66,8 @@ export class Card extends React.Component<Props, State> {
                 },
                 {
                     size: "small",
-                    delay: 10,
-                    content: "with support from ScottyLabs",
-                    link: "https://scottylabs.org/",
-                    isGlitched: false,
-                    className: "scotty-msg",
-                },
-                {
-                    size: "small",
                     delay: 7,
-                    content: "location: Gates - sign up for tons of food and swag!",
+                    content: "location: Gates - REGISTRATION IS CLOSED! Thanks to all those who were eager to attend!",
                     isGlitched: false,
                 },
                 {
@@ -93,22 +85,22 @@ export class Card extends React.Component<Props, State> {
                 {
                     size: "small",
                     delay: 7,
-                    content: "> ready? click here to register",
+                    content: "> registration is closed! click to go to the HackCMU Devpost",
                     isGlitched: false,
-                    link: "https://forms.gle/QF1enymZdbpKmjhq5",
+                    link: "https://hackcmu21.devpost.com/?fbclid=IwAR1xXnRIpbcq7lWHrqmz7auKm8I8k7L8gwyHeQz3wHn2zJvmNauJ2YSrTH8",
                     className: "wide-top",
                 },
+                // {
+                //     size: "small",
+                //     delay: 7,
+                //     content: "> click here to register as a mentor instead",
+                //     isGlitched: false,
+                //     link: "https://forms.gle/16PJ3wgEhuZzqeDj9",
+                // },
                 {
                     size: "small",
                     delay: 7,
-                    content: "> click here to register as a mentor instead",
-                    isGlitched: false,
-                    link: "https://forms.gle/16PJ3wgEhuZzqeDj9",
-                },
-                {
-                    size: "small",
-                    delay: 7,
-                    content: "> any questions or concerns? click here to be convinced",
+                    content: "> any questions or concerns? click here to learn more",
                     isGlitched: false,
                     onClick: this.showPopup,
                 }
