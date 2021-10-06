@@ -67,7 +67,7 @@ export class Card extends React.Component<Props, State> {
                 {
                     size: "small",
                     delay: 7,
-                    content: "location: Gates - REGISTRATION IS CLOSED! Thanks to all those who were eager to attend!",
+                    content: "location: Gates - The event is over! Thanks to all those who were eager to attend!",
                     isGlitched: false,
                 },
                 {
@@ -85,7 +85,7 @@ export class Card extends React.Component<Props, State> {
                 {
                     size: "small",
                     delay: 7,
-                    content: "> registration is closed! click to go to the HackCMU Devpost",
+                    content: "> click to see our awesome projects and winners on the HackCMU Devpost",
                     isGlitched: false,
                     link: "https://hackcmu21.devpost.com/?fbclid=IwAR1xXnRIpbcq7lWHrqmz7auKm8I8k7L8gwyHeQz3wHn2zJvmNauJ2YSrTH8",
                     className: "wide-top",
@@ -103,6 +103,13 @@ export class Card extends React.Component<Props, State> {
                     content: "> any questions or concerns? click here to learn more",
                     isGlitched: false,
                     onClick: this.showPopup,
+                },
+                {
+                    size: "small",
+                    delay: 7,
+                    content: "> see pictures from our event here!",
+                    isGlitched: false,
+                    link: "https://drive.google.com/drive/folders/1fXZOqMERm9uNKOUIiFHbzwzHdx6kkwAG",
                 }
             ],
             timeout: 0,

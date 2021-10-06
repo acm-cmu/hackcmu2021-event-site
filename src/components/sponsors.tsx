@@ -68,6 +68,7 @@ export class Sponsors extends React.Component<Props, State> {
                     <img className="fb" src={fb} alt={fb} />
                     <img className="hrt" src={hrt} alt={hrt} />
                     <img className="sandia" src={sandia} alt={sandia} />
+                    <img className="microsoft" src={microsoft} alt={microsoft} />
                     <img className="scm" src={scm} alt={scm} />
                 </div>
             </>
